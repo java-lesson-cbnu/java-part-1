@@ -3,7 +3,8 @@ package kr.easw.lesson1;
 public class IfElse {
     private static int TARGET_NUMBER = 1998872;
     
-    private static int IS_ODD = false;
+    private static boolean IS_ODD = false;
+    
     public static void main(String[] args) {
         if(IS_ODD != isOdd(TARGET_NUMBER)) {
             System.out.println("오답입니다.");
