@@ -10,8 +10,8 @@ public class IfElseWithOperator {
 
     /**
      * 해당 메서드는 다음과 같은 역할을 가져야 합니다 :
+     * 두 수를 입력받아, 더 큰 수를 반환해야 합니다.
      * <p>
-     *
      * @param first  - 사용자가 입력한 첫번째 숫자
      * @param second - 사용자가 입력한 두번째 숫자
      * @return 더 큰 숫자
