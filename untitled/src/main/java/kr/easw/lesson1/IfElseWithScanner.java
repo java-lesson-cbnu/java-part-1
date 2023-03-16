@@ -1,6 +1,7 @@
 package kr.easw.lesson1;
 
 import java.io.InputStream;
+import java.util.Scanner;
 
 public class IfElseWithScanner {
 
@@ -23,18 +24,33 @@ public class IfElseWithScanner {
      * @return 사용자가 콘솔에서 입력한 숫자
      */
     public static int parseNextNumber(InputStream inputStream) {
-        throw new RuntimeException("이 코드 라인을 지우고, 이곳에서 작성하십시오.");
+        // 주어진 InputStream 파라미터를 기준으로 새 Scanner 객체를 생성합니다.
+        Scanner scanner = new Scanner(inputStream);
+        // 다음 콘솔 입력을 가져옵니다.
+        scanner.close();
+        return scanner.nextInt();
+        // 다음과 같은 코드로 축약도 가능합니다.
+        // return new Scanner(inputStream).nextInt();
     }
 
     /**
      * 해당 메서드는 다음과 같은 역할을 가져야 합니다 :
      * <p>
-     * 파라미터 (매개 변수)로 지급된 변수의 값을 확인하고, 홀수라면 true, 짝수라면 false를 반환해야 합니다.
+     * 입력된 숫자가 홀수인지의 여부
      *
-     * @param number 홀수 여부를 확인해야 할 숫자
+     * @param target - 대상 숫자
      * @return 홀수 여부
      */
-    private static boolean isOdd(int number) {
-        throw new RuntimeException("이 코드 라인을 지우고, 이곳에서 작성하십시오.");
+    public static boolean isOdd(int target) {
+        // 대상을 2로 나눠 남은 나머지가 0인지 확인합니다.
+        if (target % 2 == 0) {
+            // 만약 0이라면, odd(홀수)가 아니므로 false를 반환합니다.
+            return false;
+        } else {
+            // 만약 0이 아니라면, odd임으로 true를 반환합니다.
+            return true;
+        }
+        // 다음과 같은 코드로 축약도 가능합니다.
+        // return target % 2 != 0;
     }
 }

@@ -17,6 +17,15 @@ public class IfElseWithOperator {
      * @return 더 큰 숫자
      */
     public static int getLargestNumber(int first, int second) {
-        throw new RuntimeException("이 코드 라인을 지우고, 이곳에서 작성하십시오.");
+        // 첫번째 파라미터가 2번쨰 파라미터보다 큰지 비교합니다.
+        if (first > second) {
+            // 만약 첫번쨰 파라미터가 더 크다면, 첫번째 파라미터를 반환합니다.
+            return first;
+        } else {
+            // 두번째 파라미터가 더 크다면, 두번쨰 파라미터를 반환합니다.
+            return second;
+        }
+        // 다음과 같이 삼항 연산자를 통해 축약할 수도 있습니다.
+        // return (first > second) ? first : second;
     }
 }
