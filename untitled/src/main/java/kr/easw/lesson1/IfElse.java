@@ -21,7 +21,7 @@ public class IfElse {
      * @param target - 대상 숫자
      * @return 홀수 여부
      */
-    public static int isOdd(int target) {
+    public static boolean isOdd(int target) {
         throw new RuntimeException("이 코드 라인을 지우고, 이곳에서 작성하십시오.");
     }
 }
